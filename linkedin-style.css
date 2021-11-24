@@ -14,7 +14,7 @@
     "menu-bar  menu-bar  menu-bar" 50px /* First row */
     "profile   feed      news" 1fr /* Second row */
     "boolean   feed      most-viewed" 1fr /* Third row */
-    "recent    feed      add" 1fr / /* Third row */
+    "recent    feed      add" 1fr / /* Fourth row */
     300px 1fr 300px;
 }
 
@@ -27,8 +27,8 @@
        "menu-bar menu-bar" 1fr
        "profile feed" 1fr
        "boolean feed" 1fr
-       "recent add" 1fr /
-        1fr 200px;
+       "recent feed" 1fr /
+        300px 300px;
   }
 }
 
