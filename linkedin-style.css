@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-column-gap: 50px;
+  grid-template:                        /* Heights */
+    "menu-bar  menu-bar  menu-bar" 50px /* First row */
+    "profile   feed      news" 1fr /* Second row */
+    "boolean   feed      most-viewed" 1fr /* Third row */
+    "recent    feed      add" 1fr / /* Third row */
+    300px 1fr 300px;
+}
+
+.menu-bar {
+  grid-area: menu-bar;
+  background-color: white;
+  border-style: solid;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: white;
+  border-style: solid;
+}
+
+.boolean {
+  grid-area: boolean;
+  background-color: white;
+  border-style: solid;
+}
+
+.recent {
+  /*display:none;*/
+  grid-area: recent;
+  background-color: white;
+  border-style: solid;
+}
+
+.feed {
+  grid-area: feed;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.news {
+  grid-area: news;
+  background-color: white;
+  border-style: solid;
+}
+
+.most-viewed {
+  grid-area: most-viewed;
+  background-color: white;
+  border-style: solid;
+}
+
+.add {
+    grid-area: add;
+    background-color: white;
+    border-style: solid;
+  }

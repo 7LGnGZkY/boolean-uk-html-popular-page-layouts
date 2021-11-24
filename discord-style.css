@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template:                     /* Heights */
+    "nav   sidebar   chat" 1fr /* First row */
+    "nav   sidebar   chat" 1fr /* Second row */
+    "nav   sidebar   chat" 1fr / /* Third row */
+    0.3fr 1fr 5fr;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: white;
+  border-style: solid;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: white;
+  border-style: solid;
+}
+
+.chat {
+  grid-area: chat;
+  background-color: white;
+  border-style: solid;
+}
