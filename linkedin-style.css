@@ -1,17 +1,35 @@
 * {
   margin: 0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 
 .layout {
   display: grid;
   height: 100vh;
   grid-column-gap: 50px;
+  gap: 10px;
   grid-template:                        /* Heights */
     "menu-bar  menu-bar  menu-bar" 50px /* First row */
     "profile   feed      news" 1fr /* Second row */
     "boolean   feed      most-viewed" 1fr /* Third row */
     "recent    feed      add" 1fr / /* Third row */
     300px 1fr 300px;
+}
+
+/** When device is LESS THAN 1250px */
+@media screen and (max-width: 1250px) {
+  .layout {
+      height: 100vh;
+      display: grid;
+      grid-template:
+       "menu-bar menu-bar" 1fr
+       "profile feed" 1fr
+       "boolean feed" 1fr
+       "recent add" 1fr /
+        1fr 200px;
+  }
 }
 
 .menu-bar {
@@ -43,7 +61,7 @@
   grid-area: feed;
   background-color: white;
   border-style: solid;
-  padding: 20px;
+  /* padding: 20px;*/
 }
 
 .news {

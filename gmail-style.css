@@ -1,72 +1,139 @@
 * {
-    margin: 0;
-  }
-  
-  .layout {
-    display: grid;
-    height: 100vh;
-    grid-template:                        /* Heights */
-      "logo         search  settings"  50px   /* First row */
-      "navigation   inbox   settings" 1fr    /* Second row */
-      "meet         inbox   settings" 0.5fr    /* Third row */
-      "chat         inbox   settings" 1fr /  /* Fourth row */
-      300px 1fr 300px;
-  }
+  margin: 0;
+}
 
-   .settings {
-    grid-area: settings;
-    background-color: white;
-    border-style: solid;
-    height: 100vh;
-    display: grid;
-    grid-template: "all-settings" 1fr
-                   "density"      1fr
-                   "theme"        1fr
-                   "inbox type"   1fr /
-                   1fr;
-  }
-   
-  .logo {
-    grid-area: logo;
-    background-color: white;
-    border-style: solid;
-  }
+.layout {
+  display: grid;
+  height: 100vh;
+  gap: 10px;
+  grid-template:                        /* Heights */
+    "logo         search  profile"  50px   /* First row */
+    "navigation   inbox   settings" 1fr    /* Second row */
+    "meet         inbox   settings" 0.5fr    /* Third row */
+    "chat         inbox   settings" 1fr /  /* Fourth row */
+    300px 1fr 300px;
+}
+
+.settings {
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+ .all-settings {
+  grid-area: settings;
+  background-color: white;
+  border-style: solid;
+  display: grid;
+  grid-template: "all-settings" 50px
+                 "density"      50px
+                 "theme"        50px
+                 "inbox-type"   50px /
+                 50x;
+  place-items: center;
+}
+
+/* .all-settings {
+  grid-area: settings;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+  display: grid;
+  grid-template: "all-settings" 1fr
+                 "density"      1fr
+                 "theme"        1fr
+                 "inbox-type"   1fr /
+                 1fr;
+  place-items: center;
+} */
+
+/* .density {
+  grid-area: density;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.theme {
+  grid-area: theme;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.inbox-type {
+  grid-area: inbox-type;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+} */
+
+/*.settings {
+  grid-area: settings;
+  background-color: white;
+  border-style: solid;
+  display:grid;
+  grid-template: all-settings 10px
+                 density 10px
+                 theme 10px
+                 inbox 10px /
+                 50px;
+                 
+}*/
+
+/* .settings {
+  grid-area: settings;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+} */
+ 
+.logo {
+  grid-area: logo;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.search {
+  grid-area: search;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.navigation {
+  /*display:none;*/
+  grid-area: navigation;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.inbox {
+  grid-area: inbox;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
   
-  .search {
-    grid-area: search;
-    background-color: white;
-    border-style: solid;
-  }
-  
-  .profile {
-    grid-area: profile;
-    background-color: white;
-    border-style: solid;
-  }
-  
-  .navigation {
-    /*display:none;*/
-    grid-area: navigation;
-    background-color: white;
-    border-style: solid;
-  }
-  
-  .inbox {
-    grid-area: inbox;
+.meet {
+  grid-area: meet;
+  background-color: white;
+  border-style: solid;
+  padding: 20px;
+}
+
+.chat {
+    grid-area: chat;
     background-color: white;
     border-style: solid;
     padding: 20px;
   }
-    
-  .meet {
-    grid-area: meet;
-    background-color: white;
-    border-style: solid;
-  }
-  
-  .chat {
-      grid-area: chat;
-      background-color: white;
-      border-style: solid;
-    }
-  
