@@ -18,9 +18,20 @@
   background-color: white;
   border-style: solid;
   padding: 20px;
+  grid-area: settings;
+  grid-template: "all-settings" 1fr
+                 "density"      1fr
+                 "theme"        1fr
+                 "inbox-type"   1fr /
+                 1fr;
+  place-items: center;
 }
 
- .all-settings {
+.h3 {
+  border-style: solid;
+}
+
+ /* .all-settings {
   grid-area: settings;
   background-color: white;
   border-style: solid;
@@ -31,7 +42,7 @@
                  "inbox-type"   50px /
                  50x;
   place-items: center;
-}
+} */
 
 /* .all-settings {
   grid-area: settings;

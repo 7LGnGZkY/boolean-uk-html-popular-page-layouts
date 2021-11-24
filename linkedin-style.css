@@ -19,11 +19,12 @@
 }
 
 /** When device is LESS THAN 1250px */
+/***Add sticking to right for some reason***/
 @media screen and (max-width: 1250px) {
   .layout {
       height: 100vh;
       display: grid;
-      grid-template:
+      grid-template:      
        "menu-bar menu-bar" 1fr
        "profile feed" 1fr
        "boolean feed" 1fr
@@ -31,6 +32,7 @@
         300px 300px;
   }
 }
+
 
 .menu-bar {
   grid-area: menu-bar;
